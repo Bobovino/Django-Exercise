@@ -1,0 +1,78 @@
+:root {
+    --color-primary: #2ea3f2;
+    --color-text:#666;
+    --font-main:Novaquinta;
+    --font-text:Socake;
+}
+
+/*Main settings*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:var(--font-text);
+    color:var(--color-text)
+}
+
+/*
+@font-face {
+    font-family: NovaQuinta;
+    src: url(../fonts/NovaQuinta.otf);
+}
+*/
+
+@font-face {
+    font-family: Socake;
+    src: url(../fonts/Socake.ttf);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-main);
+    color:var(---color-primary)
+}
+/*End main settings*/
+
+/*Layout settings*/
+
+nav{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100vw;
+    height:80px;
+    background-color: var(--color-primary);
+}
+
+nav ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width: 90vw;
+
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    text-transform: uppercase;
+    font-family:var(--font-main);
+    padding:10px;
+}
+
+nav ul li a:hover   {
+    color:green;
+
+}    
+
+main{
+    display:flex;
+    width: 100vw;
+    margin: 50px;
+    justify-content: center;
+    align-items:flex-start;
+
+}
+
+/*End layout settings*/
